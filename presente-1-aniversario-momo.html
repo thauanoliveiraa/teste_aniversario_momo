@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário Mozinho</title>
+    <style>
+        @font-face {
+            font-family: 'MermaidSwashCaps';
+            src: url('../static/fonts/Mermaid\ Swash\ Caps.ttf');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        body {
+            background-color: rgb(71, 204, 238);
+            font-family: 'MermaidSwashCaps', Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        h1 {
+            font-size: 2em;
+            color: #000000;
+        }
+
+        p {
+            font-size: 1em;
+            color: #000000;
+        }
+
+        .bolo {
+            margin-right: 5px;
+        }
+
+        .espacamento {
+            margin-right: 10px;
+        }
+
+        .conteudo-aniversario {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            justify-content: center;
+            -webkit-box-shadow: 0px 9px 22px 0px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0px 9px 22px 0px rgba(0, 0, 0, 1);
+            box-shadow: 0px 9px 22px 0px rgba(0, 0, 0, 1);
+
+        }
+
+        .countdown {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(247, 151, 239);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+        }
+
+        .countdown div {
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .countdown span {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .sereias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .redirect-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #000000;
+            background-color: #f8aaf4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.6s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .redirect-btn:hover {
+            background-color: #cfa3cd;
+        }
+
+        #tulipa {
+            font-size: 2rem;
+        }
+
+        iframe {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: 768px) {
+            .countdown div {
+                font-size: 1.5rem;
+            }
+
+            .countdown span {
+                font-size: 3rem;
+            }
+
+            .sereias iframe {
+                width: 250px;
+                height: 200px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .conteudo-aniversario {
+                width: 70%;
+            }
+
+            .sereias iframe {
+                width: 350px;
+                height: 300px;
+            }
+        }
+
+
+
+
+
+
+
+        .slider {
+            width: 300px;
+            height: 180px;
+            overflow: hidden;
+
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+            margin-left: 24%;
+
+        }
+
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: slide 100s infinite;
+        }
+
+        .slides img {
+            width: 400px;
+            height: 200px;
+        }
+
+
+        .slides-images {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @keyframes slide {
+
+            0%,
+            2% {
+                transform: translateX(0);
+            }
+
+            4%,
+            6% {
+                transform: translateX(-100%);
+            }
+
+            8%,
+            10% {
+                transform: translateX(-200%);
+            }
+
+            12%,
+            14% {
+                transform: translateX(-300%);
+            }
+
+            16% {
+                transform: translateX(-400%);
+            }
+
+            18% {
+                transform: translateX(-500%);
+            }
+
+            20% {
+                transform: translateX(-600%);
+            }
+
+            22% {
+                transform: translateX(-700%);
+            }
+
+            24% {
+                transform: translateX(-800%);
+            }
+
+            26% {
+                transform: translateX(-900%);
+            }
+
+            28% {
+                transform: translateX(-1000%);
+            }
+
+            30% {
+                transform: translateX(-1100%);
+            }
+
+            32% {
+                transform: translateX(-1200%);
+            }
+
+            34% {
+                transform: translateX(-1400%);
+            }
+
+
+            36% {
+                transform: translateX(-1500%);
+            }
+
+            38% {
+                transform: translateX(-1600%);
+            }
+
+            40% {
+                transform: translateX(-1700%);
+            }
+
+            42% {
+                transform: translateX(-1800%);
+            }
+
+            44% {
+                transform: translateX(-1900%);
+            }
+
+            46% {
+                transform: translateX(-2000%);
+            }
+
+            48% {
+                transform: translateX(-2100%);
+            }
+
+            50% {
+                transform: translateX(-2200%);
+            }
+
+            52% {
+                transform: translateX(-2300%);
+            }
+
+            54% {
+                transform: translateX(-2400%);
+            }
+
+            56% {
+                transform: translateX(-2500%);
+            }
+
+            58% {
+                transform: translateX(-2600%);
+            }
+
+            60% {
+                transform: translateX(-2700%);
+            }
+
+            62% {
+                transform: translateX(-2800%);
+            }
+
+            64% {
+                transform: translateX(-2900%);
+            }
+
+            66% {
+                transform: translateX(-3000%);
+            }
+
+            68% {
+                transform: translateX(-3100%);
+            }
+
+            70% {
+                transform: translateX(-3200%);
+            }
+
+            72% {
+                transform: translateX(-3300%);
+            }
+
+            74% {
+                transform: translateX(-3400%);
+            }
+
+            76% {
+                transform: translateX(-3500%);
+            }
+
+            78% {
+                transform: translateX(-3600%);
+            }
+
+            80% {
+                transform: translateX(-3700%);
+            }
+
+            82% {
+                transform: translateX(-3800%);
+            }
+
+            84% {
+                transform: translateX(-3900%);
+            }
+
+            86% {
+                transform: translateX(-4000%);
+            }
+
+            88% {
+                transform: translateX(-4100%);
+            }
+
+            90% {
+                transform: translateX(-4200%);
+            }
+
+            92% {
+                transform: translateX(-4300%);
+            }
+
+            94% {
+                transform: translateX(-4400%);
+            }
+
+            96% {
+                transform: translateX(-4500%);
+            }
+
+            98% {
+                transform: translateX(-4600%);
+            }
+
+            100% {
+                transform: translateX(-4700%);
+            }
+
+        }
+
+
+
+        @media (max-width: 1024px) {
+            .slider {
+
+                margin-left: 24%;
+
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slider {
+
+                margin-left: 16%;
+
+            }
+        }
+
+        .heart-button {
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 80px;
+            cursor: pointer;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <section class="conteudo-aniversario">
+
+        <audio controls title="Eu te amo">
+            <source src="musica-site-1.mp3" type="audio/mp3" >
+        </audio>
+        
+        <h1>Feliz aniversário minha amorinha</h1>
+        <h1>O seu dia chegoooooouuuuuuuuuu!!!!!!</h1>
+        <p>
+            O que dizer sobre você? São tantas coisas, você chegou como um vento soprando a minha vida, de uma forma
+            rápida e boa se instalou e começou a fazer parte dela, aquela brisa, ventania, tornando meus dias mais
+            frescos e felizes do seu lado. Chegou como o sol depois de um dia chuvoso, o sol que esquenta com seu brilho
+            radiante e nos faz lembrar de como são lindos, os dias em que ele está presente, trazendo com ele todas as
+            sensações e pensamentos de que hoje, amanhã e que o futuro serão dias bons e que ainda se vale apena amar.
+
+            <br><br>
+
+            Você é como a nota mais afinada de um piano, e que a cada tecla traz com você a leveza e delicadeza de uma
+            doce princesa, a minha princesa, que merece ser amada, cuidada, respeitada e bem tratada, coisas que nunca
+            irão te faltar. Cada palavra que eu trouxer, não chega nem perto de descrever o que eu realmente penso,
+            imagino ou sinto por você, me faltam palavras para definir a mistura de sensações e sentimentos que me
+            passam ao te ter por perto, e graças a Deus, eu te tenho por perto, perto de mim, perto da minha vida, perto
+            do meu presente, perto do meu futuro, perto de tudo.
+            
+            <br><br>
+
+            Ter sido escolhido por você, faz de mim um cara sortudo, me lembro disso todos os dias, em saber que tenho a
+            imensidão do universo, pertinho dos meus braços, e que me faz sentir tão bem e acolhido com um simples
+            abraço, sua voz me acalma, seus olhos me hipnotizam, seu sorriso me derrete por inteiro, seu cabelo me
+            encanta, seus traços finos e o belo desenho que é o seu rosto, me deixam doido, e o seu corpo... o seu
+            corpo... faz de mim um verdadeiro louco, louco por você, e louco por todo amor e carinho que você me
+            proporciona, disposto a te fazer feliz até o último milésimo de segundo em que estivermos aqui nessa vida,
+            para te amar ainda mais em outras.
+
+            <br><br>
+
+            Desde o dia em que eu te conheci, me sinto mais feliz, mais alegre, e os nossos planos me fazem ter ainda
+            mais vontade de viver, de ter você, de viver com você, de levar uma vida com você. Eu sou feliz do seu lado,
+            e como sou, em saber que estamos juntos para todas as coisas que essa vida nos trouxer. Peço a Deus que
+            cuide de nós, e que abençoe nosso relacionamento, que nossa família seja construída com respeito, amor e
+            carinho, e só Deus sabe, o medo que tenho de te perder.
+
+            <br><br>
+
+            Você é o meu mundo, e que faz a vida ser leve, divertida e bonita, me mostrando que sempre vai existir
+            alguém que também está disposto a fazer tudo por você, da mesma forma que fazemos, mostrando que não
+            deixamos que frustrações ou momentos ruins passados, definissem o que devíamos sentir ou pensar no futuro,
+            você é o meu futuro, que me traz a felicidade e serenidade em saber que tenho uma incrível mulher do meu
+            lado.
+
+            <br><br>
+
+            Agradeço a Deus por sua existência, você é um anjinho, o meu anjinho, que veio para iluminar e abençoar a
+            minha vida e mostrar que sempre vai existir alguém disposto a te amar, e que não vai desistir no primeiro,
+            segundo ou terceiro problema que aparecer. Sua existência é memorável, e graças a Deus eu tenho a renomada
+            oportunidade em presenciar isso de forma concreta, perto de você, pois é assim que eu sei que vamos
+            permanecer até os últimos dias de nossas vidas.
+
+            <br><br>
+
+            Feliz aniversário eu amorzinho, meu melzinho, minha amorinha, minha sereiazinha, meu momô, meu amomô, minha tulipinha Feliz aniversário, amor da minha vida, que sua existência seja contemplada por esse maravilhoso universo, e que seus sonhos e conquistas se alcancem, eu sempre estarei do seu lado para ajudar a conquistar e chegar lá. Que Deus cuide de você, e abençoe sempre, te livrando de toda e qualquer negatividade desse mundo, e que a felicidade, o amor e a doçura sempre encontrem nossos corações, minha stitch. Eu Te Amo, com todas as letras e palavras, e eu sempre vou te amar, como disse Tom Jobim, "Eu sei que vou te amar, por toda a minha vida eu vou te amar" 🤍
+        </p>
+        <p id="tulipa">🌷</p>
+        <h2>Clique e abra o outro presenteeeeee</h2>
+
+        <button class="heart-button" id="heart-button-2" onclick="redirectToPage()">🎁</button>
+    </section>
+
+
+    <script>
+        // Trigger confetti when the page loads
+        window.onload = function () {
+            const duration = 8 * 100000; // 5 seconds
+            const end = Date.now() + duration;
+
+            (function frame() {
+                // Generate confetti particles
+                confetti({
+                    particleCount: 4,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 }
+                });
+                confetti({
+                    particleCount: 4,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 }
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            })();
+        };
+
+        function redirectToPage() {
+            window.location.href = 'presente-senha-aniversario-momo.html';
+        }
+    </script>
+</body>
+
+</html>
